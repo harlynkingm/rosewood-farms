@@ -24,13 +24,9 @@
     font-weight: 100;
     margin-bottom: $spacing-s;
   }
-
-  p:last-child {
-    margin-bottom: $spacing-l;
-  }
 }
 
-p:last-child {
+p:last-child, h1:last-child {
   margin-bottom: 0;
 }
 
@@ -40,11 +36,23 @@ p:last-child {
   margin-bottom: $spacing-xl;
 }
 
+.container {
+  margin-bottom: $spacing-xl*2;
+
+  img {
+    width: 100%;
+  }
+}
+
 .construction {
   margin-top: $header-height * 1.5;
 }
 
 @media (max-width: 800px) {
+  .mainImage {
+    height: 64vh;
+  }
+
   .mainTitle {
     font-size: 3.3em;
   }

@@ -11,13 +11,12 @@ export default class Home extends Component {
 
   render() {
     console.log(this.props);
+    let data = this.props.data;
     let image1 = null;
     let image2 = null;
-    let text = null;
-    if (this.props.data){
-      image1 = this.props.data.mainPhoto.fields.file.url;
-      image2 = this.props.data.secondaryPhoto.fields.file.url;
-      text = this.props.data.pageContent;
+    if (data){
+      image1 = data.mainPhoto.fields.file.url;
+      image2 = data.secondaryPhoto.fields.file.url;
     }
     return (
       <div className="home">
@@ -29,7 +28,20 @@ export default class Home extends Component {
             <b>Rosewood Farms</b>
           </h1>
           <div className="mainDescription">
-            <Markdown markup={ text } />
+            <Markdown markup={ data ? data.pageContent : 'Loading...' } />
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="four columns">
+              <Markdown markup={ data ? data.textFeature1 : 'Loading...' } />
+            </div>
+            <div className="four columns">
+              <Markdown markup={ data ? data.textFeature2 : 'Loading...' } />
+            </div>
+            <div className="four columns">
+              <Markdown markup={ data ? data.textFeature3 : 'Loading...' } />
+            </div>
           </div>
         </div>
         <div className="mainImage" style={this.styleFromImage(image2)}></div>

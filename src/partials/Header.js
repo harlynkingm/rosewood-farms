@@ -3,13 +3,32 @@ import { NavLink } from 'react-router-dom';
 import logo from '../img/logo.png';
 
 export default class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      active: false
+    };
+    this.toggleActive = this.toggleActive.bind(this);
+  }
+
+  toggleActive(){
+    this.setState({
+      active: !this.state.active
+    });
+  }
+
   render() {
     return (
       <div className="header">
         <NavLink to="/">
           <img src={logo} className="header-logo" alt="Rosewood Farms"/>
         </NavLink>
-        <ul className="header-links">
+        <div id="menuIcon" onClick={this.toggleActive} className={this.state.active ? 'open' : null}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul className={this.state.active ? 'header-links open' : 'header-links'}>
           <li><NavLink to="/weddings" activeClassName='active'>
             Weddings
           </NavLink></li>

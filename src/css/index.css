@@ -1,3 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Khula:300,400,700");
+.header {
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 10;
+  margin-bottom: -90px; }
 
+.header-logo {
+  height: 75%;
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.header-links {
+  list-style-type: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0; }
+  .header-links li {
+    float: left;
+    display: block;
+    margin-left: 20px; }
+  .header-links a {
+    font-size: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: relative;
+    color: #6c4200; }
+  .header-links a:hover {
+    cursor: pointer; }
+  .header-links a:after {
+    position: absolute;
+    left: 50%;
+    content: '';
+    height: 1px;
+    background: #6c4200;
+    transition-delay: 0.1s;
+    transition: width 0.2s, left 0.2s;
+    width: 0;
+    bottom: -3px; }
+  .header-links a:hover:after, .header-links .active:after {
+    width: 100%;
+    left: 0px; }
+
+@media (max-width: 800px) {
+  .header-links {
+    display: none; } }
+.mainImage {
+  height: 80vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eee;
+  margin-bottom: 30px; }
+
+.mainPreTitle {
+  font-size: 50%; }
+
+.mainTitle {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 5em;
+  line-height: 0.9; }
+
+.mainDescription p {
+  font-size: 130%;
+  font-weight: 100;
+  margin-bottom: 10px; }
+.mainDescription p:last-child {
+  margin-bottom: 20px; }
+
+p:last-child {
+  margin-bottom: 0; }
+
+.container-border {
+  padding-left: 30px;
+  border-left: 1px solid #6c4200;
+  margin-bottom: 30px; }
+
+.construction {
+  margin-top: 135px; }
+
+@media (max-width: 800px) {
+  .mainTitle {
+    font-size: 3.3em; } }
+.footer {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.25); }
+
+.rosewood {
+  color: #6c4200; }
 
 /*# sourceMappingURL=index.css.map */

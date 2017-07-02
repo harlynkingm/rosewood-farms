@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Khula:300,400,700');
+
+$rosewood-brown: #6c4200;
+
+$spacing-xl: 30px;
+$spacing-l: 20px;
+$spacing-s: 10px;
+
+$header-height: 90px;
+
+@import 'Header';
+@import 'Body';
+@import 'Footer';
+
+.rosewood {
+  color: $rosewood-brown;
+}

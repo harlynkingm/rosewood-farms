@@ -1,0 +1,51 @@
+.mainImage {
+  height: 80vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eee;
+  margin-bottom: $spacing-xl;
+}
+
+.mainPreTitle {
+  font-size: 50%;
+}
+
+.mainTitle {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 5em;
+  line-height: 0.9;
+}
+
+.mainDescription {
+  p {
+    font-size: 130%;
+    font-weight: 100;
+    margin-bottom: $spacing-s;
+  }
+
+  p:last-child {
+    margin-bottom: $spacing-l;
+  }
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.container-border {
+  padding-left: $spacing-xl;
+  border-left: 1px solid $rosewood-brown;
+  margin-bottom: $spacing-xl;
+}
+
+.construction {
+  margin-top: $header-height * 1.5;
+}
+
+@media (max-width: 800px) {
+  .mainTitle {
+    font-size: 3.3em;
+  }
+}

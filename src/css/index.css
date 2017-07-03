@@ -237,13 +237,16 @@ form {
   animation-name: fade;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  pointer-events: none; }
 
 @keyframes fade {
   from {
-    opacity: 1; }
+    opacity: 1;
+    display: block; }
   to {
-    opacity: 0; } }
+    opacity: 0;
+    display: none; } }
 .rosewood {
   color: #cc3300; }
 

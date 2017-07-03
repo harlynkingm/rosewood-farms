@@ -34,14 +34,11 @@ export default class Home extends Component {
         </div>
         <div className="container">
           <div className="row">
-            <div className="four columns">
+            <div className="six columns">
               <Markdown markup={ data ? data.textFeature1 : 'Loading...' } />
             </div>
-            <div className="four columns">
+            <div className="six columns">
               <Markdown markup={ data ? data.textFeature2 : 'Loading...' } />
-            </div>
-            <div className="four columns">
-              <Markdown markup={ data ? data.textFeature3 : 'Loading...' } />
             </div>
           </div>
         </div>

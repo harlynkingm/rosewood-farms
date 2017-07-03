@@ -1,5 +1,5 @@
 .mainImage {
-  height: 80vh;
+  height: 78vh;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,12 +19,10 @@
   color: $rosewood;
 }
 
-.mainDescription {
-  p {
-    font-size: 130%;
-    font-weight: 100;
-    margin-bottom: $spacing-s;
-  }
+p {
+  font-size: 130%;
+  font-weight: 100;
+  margin-bottom: $spacing-s;
 }
 
 p:last-child, h1:last-child {
@@ -79,6 +77,7 @@ form {
 @media (max-width: 800px) {
   .mainImage {
     height: 64vh;
+    margin-bottom: $spacing-l;
   }
 
   .mainTitle {

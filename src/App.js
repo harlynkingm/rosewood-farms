@@ -12,6 +12,7 @@ import Header from './partials/Header';
 import Home from './partials/Home';
 import Footer from './partials/Footer';
 import Construction from './partials/Construction';
+import Loading from './partials/Loading';
 
 class App extends Component {
 
@@ -47,20 +48,27 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <Router>
-        <div>
-          <Header />
-          <Switch>
-          <Route exact path="/" component={
-            () => (<Home data={this.getProps(this.state.data, 'Home')}/>)
-          }/>
-          <Route component={Construction}/>
-          </Switch>
-          <Footer />
-        </div>
-      </Router>
-    );
+    if (this.state.data.length){
+      return (
+        <Router>
+          <div>
+            <Loading fade={true}/>
+            <Header />
+            <Switch>
+            <Route exact path="/" component={
+              () => (<Home data={this.getProps(this.state.data, 'Home')}/>)
+            }/>
+            <Route component={Construction}/>
+            </Switch>
+            <Footer />
+          </div>
+        </Router>
+      );
+    } else {
+      return (
+        <Loading fade={false}/>
+      )
+    }
   }
 }
 

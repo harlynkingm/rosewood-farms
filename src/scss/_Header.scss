@@ -8,7 +8,7 @@
 
 .header-logo {
   height: 70%;
-  margin-left: $spacing-l;
+  margin-left: $spacing-m;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -17,7 +17,7 @@
 .header-links {
   list-style-type: none;
   position: absolute;
-  right: $spacing-l;
+  right: $spacing-m;
   top: 50%;
   transform: translateY(-50%);
   margin: 0;
@@ -25,7 +25,7 @@
   li {
     float: left;
     display: block;
-    margin-left: $spacing-l;
+    margin-left: $spacing-m;
   }
 
   a {
@@ -33,7 +33,7 @@
     font-weight: 100;
     text-transform: uppercase;
     position: relative;
-    color: $rosewood-brown;
+    color: $rosewood;
   }
 
   a:hover {
@@ -45,7 +45,7 @@
     left: 50%;
     content: '';
     height: 1px;
-    background: $rosewood-brown;
+    background: $rosewood;
     transition-delay: 0.1s;
     transition: width 0.2s, left 0.2s;
     width: 0;
@@ -74,7 +74,7 @@
       width: 100%;
       background-color: rgba(255, 255, 255, 0.9);
       margin-left: 0;
-      padding-top: $spacing-l;
+      padding-top: $spacing-m;
       text-align: center;
     }
 
@@ -83,7 +83,7 @@
     }
 
     li:last-child {
-      padding-bottom: $spacing-l;
+      padding-bottom: $spacing-m;
     }
   }
 
@@ -98,7 +98,7 @@
     position: relative;
     cursor: pointer;
     float: right;
-    margin-right: $spacing-l;
+    margin-right: $spacing-m;
     top: $header-height/2;
     transform: translateY(-50%);
   }
@@ -108,7 +108,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    background: $rosewood-brown;
+    background: $rosewood;
     border-radius: 1px;
     opacity: 1;
     left: 0;

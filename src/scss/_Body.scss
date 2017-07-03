@@ -9,13 +9,14 @@
 
 .mainPreTitle {
   font-size: 50%;
+  color: black;
 }
 
 .mainTitle {
   font-weight: 100;
-  text-transform: uppercase;
   font-size: 5em;
   line-height: 0.9;
+  color: $rosewood;
 }
 
 .mainDescription {
@@ -31,16 +32,43 @@ p:last-child, h1:last-child {
 }
 
 .container-border {
-  padding-left: $spacing-xl;
-  border-left: 1px solid $rosewood-brown;
-  margin-bottom: $spacing-xl;
+  padding-left: $spacing-l;
+  border-left: 1px solid black;
+  margin-bottom: $spacing-l;
 }
 
 .container {
-  margin-bottom: $spacing-xl*2;
+  margin-bottom: $spacing-xl;
 
   img {
     width: 100%;
+  }
+}
+
+form {
+  margin: 0;
+
+  input, textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 0.8;
+    transition: border 0.2s, opacity 0.2s;
+    padding: 5px;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    opacity: 1;
+    border-bottom: 1px solid $rosewood;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    border-radius: 0;
+    border-color: black;
   }
 }
 
@@ -55,5 +83,9 @@ p:last-child, h1:last-child {
 
   .mainTitle {
     font-size: 3.3em;
+  }
+
+  .columns div {
+    margin-bottom: $spacing-l;
   }
 }

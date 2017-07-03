@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Khula:300,400,700');
 
-$rosewood-brown: #6c4200;
+$rosewood: #cc3300;
 
-$spacing-xl: 30px;
-$spacing-l: 20px;
+$spacing-xl: 60px;
+$spacing-l: 30px;
+$spacing-m: 20px;
 $spacing-s: 10px;
 
 $header-height: 90px;
@@ -13,5 +14,9 @@ $header-height: 90px;
 @import 'Footer';
 
 .rosewood {
-  color: $rosewood-brown;
+  color: $rosewood;
+}
+
+.u-caps {
+  text-transform: uppercase;
 }

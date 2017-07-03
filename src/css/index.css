@@ -29,7 +29,7 @@
     font-weight: 100;
     text-transform: uppercase;
     position: relative;
-    color: #6c4200; }
+    color: #cc3300; }
   .header-links a:hover {
     cursor: pointer; }
   .header-links a:after {
@@ -37,7 +37,7 @@
     left: 50%;
     content: '';
     height: 1px;
-    background: #6c4200;
+    background: #cc3300;
     transition-delay: 0.1s;
     transition: width 0.2s, left 0.2s;
     width: 0;
@@ -86,7 +86,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #6c4200;
+    background: #cc3300;
     border-radius: 1px;
     opacity: 1;
     left: 0;
@@ -145,16 +145,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #eee;
-  margin-bottom: 30px; }
+  margin-bottom: 60px; }
 
 .mainPreTitle {
-  font-size: 50%; }
+  font-size: 50%;
+  color: black; }
 
 .mainTitle {
   font-weight: 100;
-  text-transform: uppercase;
   font-size: 5em;
-  line-height: 0.9; }
+  line-height: 0.9;
+  color: #cc3300; }
 
 .mainDescription p {
   font-size: 130%;
@@ -166,13 +167,31 @@ p:last-child, h1:last-child {
 
 .container-border {
   padding-left: 30px;
-  border-left: 1px solid #6c4200;
+  border-left: 1px solid black;
   margin-bottom: 30px; }
 
 .container {
   margin-bottom: 60px; }
   .container img {
     width: 100%; }
+
+form {
+  margin: 0; }
+  form input, form textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 0.8;
+    transition: border 0.2s, opacity 0.2s;
+    padding: 5px; }
+  form input:focus, form textarea:focus {
+    outline: none;
+    opacity: 1;
+    border-bottom: 1px solid #cc3300; }
+  form textarea {
+    resize: none; }
+  form button {
+    border-radius: 0;
+    border-color: black; }
 
 .construction {
   margin-top: 135px; }
@@ -182,7 +201,10 @@ p:last-child, h1:last-child {
     height: 64vh; }
 
   .mainTitle {
-    font-size: 3.3em; } }
+    font-size: 3.3em; }
+
+  .columns div {
+    margin-bottom: 30px; } }
 .footer {
   margin-top: 30px;
   padding-bottom: 30px;
@@ -193,6 +215,9 @@ p:last-child, h1:last-child {
   .footer p:last-child {
     padding-bottom: 20px; } }
 .rosewood {
-  color: #6c4200; }
+  color: #cc3300; }
+
+.u-caps {
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=index.css.map */

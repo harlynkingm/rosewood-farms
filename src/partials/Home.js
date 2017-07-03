@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Markdown } from 'react-showdown';
+import Contact from './Contact';
 
 export default class Home extends Component {
 
@@ -22,7 +23,7 @@ export default class Home extends Component {
       <div className="home">
         <div className="mainImage" style={this.styleFromImage(image1)}></div>
         <div className="container container-border">
-          <h1 className="mainTitle">
+          <h1 className="mainTitle u-caps">
             <span className="mainPreTitle">Welcome to</span>
             <br />
             <b>Rosewood Farms</b>
@@ -45,6 +46,7 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="mainImage" style={this.styleFromImage(image2)}></div>
+        <Contact />
       </div>
     )
   }

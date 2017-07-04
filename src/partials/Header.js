@@ -29,6 +29,12 @@ export default class Header extends Component {
           <span></span>
         </div>
         <ul className={this.state.active ? 'header-links open' : 'header-links'}>
+          <li><NavLink exact to="/" activeClassName='active'>
+            Home
+          </NavLink></li>
+          <li><NavLink exact to="/about" activeClassName='active'>
+            About
+          </NavLink></li>
           <li><NavLink to="/weddings" activeClassName='active'>
             Weddings
           </NavLink></li>

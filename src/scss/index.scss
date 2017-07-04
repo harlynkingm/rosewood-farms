@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Khula:300,400,700');
 
 $rosewood: #cc3300;
+$grey: #f8f8f8;
 
 $spacing-xl: 60px;
 $spacing-l: 30px;
@@ -20,4 +21,8 @@ $header-height: 90px;
 
 .u-caps {
   text-transform: uppercase;
+}
+
+::selection {
+  background: #eee;
 }

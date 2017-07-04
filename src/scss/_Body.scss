@@ -10,13 +10,14 @@
 .mainPreTitle {
   font-size: 50%;
   color: black;
+  display: block;
+  padding: $spacing-s 0;
 }
 
 .mainTitle {
   font-weight: 100;
   font-size: 5em;
   line-height: 0.9;
-  color: $rosewood;
 }
 
 p {

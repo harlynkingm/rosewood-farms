@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
-import {
-  HashRouter as Router,
-  Route,
-  Switch
-} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import {createClient} from 'contentful';
 import './css/normalize.css';
 import './css/skeleton.css';
 import './css/index.css';
 import Header from './partials/Header';
-import Home from './partials/Home';
 import Footer from './partials/Footer';
-import Construction from './partials/Construction';
 import Loading from './partials/Loading';
+import Routes from './partials/Routes';
 
 class App extends Component {
 
@@ -41,12 +36,6 @@ class App extends Component {
     //console.log(data);
   }
 
-  getProps(data, pageTitle){
-    return data.filter(function(page){
-      return page.pageTitle === pageTitle;
-    })[0];
-  }
-
   render() {
     if (this.state.data.length){
       return (
@@ -54,12 +43,7 @@ class App extends Component {
           <div>
             <Loading fade={true}/>
             <Header />
-            <Switch>
-            <Route exact path="/" component={
-              () => (<Home data={this.getProps(this.state.data, 'Home')}/>)
-            }/>
-            <Route component={Construction}/>
-            </Switch>
+            <Routes data={this.state.data}/>
             <Footer />
           </div>
         </Router>

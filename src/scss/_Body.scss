@@ -20,6 +20,17 @@
   line-height: 0.9;
 }
 
+.mainDescription {
+  h4 {
+    margin-top: $spacing-l;
+    margin-bottom: $spacing-s;
+  }
+
+  h4:first-child {
+    margin-top: 0;
+  }
+}
+
 p {
   font-size: 130%;
   font-weight: 100;

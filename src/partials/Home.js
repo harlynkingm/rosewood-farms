@@ -7,7 +7,7 @@ import ImageContainer from './components/ImageContainer';
 export default class Home extends Component {
 
   render() {
-    console.log(this.props);
+    //console.log(this.props);
     let data = this.props.data;
     return (
       <div className="home">

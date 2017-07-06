@@ -29,6 +29,19 @@
   h4:first-child {
     margin-top: 0;
   }
+
+  ul {
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+
+  li {
+    font-size: 110%;
+  }
+
+  li::before {
+    content: '- '
+  }
 }
 
 p {
@@ -84,9 +97,34 @@ form {
 
 .construction {
   margin-top: $header-height * 1.5;
+
+  img {
+    width: 80px;
+    margin-bottom: $spacing-l;
+  }
+
+  .container  {
+    margin-bottom: 30vh;
+  }
 }
 
-@media (max-width: 800px) {
+.features {
+  a {
+    color: $rosewood;
+    text-decoration: underline;
+  }
+
+  p:last-child {
+    margin-bottom: $spacing-s;
+  }
+
+  h4 {
+    margin-bottom: $spacing-s;
+  }
+
+}
+
+@media (max-width: $small-screen) {
   .mainImage {
     height: 64vh;
     margin-bottom: $spacing-l;

@@ -13,6 +13,17 @@
   top: 50%;
   transform: translateY(-50%); }
 
+.header-title {
+  text-transform: uppercase;
+  color: #cc3300;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  font-weight: 100; }
+
 .header-links {
   list-style-type: none;
   position: absolute;
@@ -49,7 +60,7 @@
 #menuIcon {
   display: none; }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .header-links {
     position: static;
     display: block;
@@ -163,6 +174,13 @@
   margin-bottom: 10px; }
 .mainDescription h4:first-child {
   margin-top: 0; }
+.mainDescription ul {
+  margin-bottom: 0;
+  list-style-type: none; }
+.mainDescription li {
+  font-size: 110%; }
+.mainDescription li::before {
+  content: "- "; }
 
 p {
   font-size: 130%;
@@ -202,8 +220,21 @@ form {
 
 .construction {
   margin-top: 135px; }
+  .construction img {
+    width: 80px;
+    margin-bottom: 30px; }
+  .construction .container {
+    margin-bottom: 30vh; }
 
-@media (max-width: 800px) {
+.features a {
+  color: #cc3300;
+  text-decoration: underline; }
+.features p:last-child {
+  margin-bottom: 10px; }
+.features h4 {
+  margin-bottom: 10px; }
+
+@media (max-width: 960px) {
   .mainImage {
     height: 64vh;
     margin-bottom: 30px; }
@@ -222,7 +253,7 @@ form {
   .footer p {
     font-size: 100%; }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .footer p:last-child {
     padding-bottom: 20px; } }
 .loading {
@@ -260,6 +291,9 @@ form {
 
 .u-caps {
   text-transform: uppercase; }
+
+.u-center {
+  text-align: center; }
 
 ::selection {
   background: #eee; }

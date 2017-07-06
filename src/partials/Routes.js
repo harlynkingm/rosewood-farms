@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import Weddings from './Weddings';
 import Construction from './Construction';
 
 export default class Routes extends Component {
@@ -22,6 +23,9 @@ export default class Routes extends Component {
         }/>
         <Route path="/about" component={
           () => (<About data={this.getProps(this.props.data, 'About')}/>)
+        }/>
+        <Route path="/weddings" component={
+          () => (<Weddings data={this.getProps(this.props.data, 'Weddings')}/>)
         }/>
         <Route component={Construction}/>
       </Switch>

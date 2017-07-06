@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import Contact from './Contact';
 import FeaturesContainer from './components/FeaturesContainer';
 import TextContainer from './components/TextContainer';
 import ImageContainer from './components/ImageContainer';
 
-export default class Home extends Component {
-
+export default class Weddings extends Component {
   render() {
-    //console.log(this.props);
     let data = this.props.data;
     return (
-      <div className="home">
+      <div className="weddings">
         <ImageContainer image={data.mainPhoto.fields.file.url}/>
         <TextContainer
           pretitle={data.pretitle}
@@ -18,12 +15,12 @@ export default class Home extends Component {
           content={data ? data.pageContent : 'Loading...'}
           isTitle = {true}
         />
-        <ImageContainer image={data.secondaryPhoto.fields.file.url}/>
-        <TextContainer
-          title="Watch Us Grow"
-          content={data ? data.pageContentSecondary : 'Loading...'}
+        <FeaturesContainer
+          feature1={data ? data.textFeature1 : 'Loading...'}
+          link1="/gallery"
+          feature2={data ? data.textFeature2 : 'Loading...'}
+          link2="/vendors"
         />
-        <Contact />
       </div>
     )
   }

@@ -10,6 +10,8 @@ $spacing-s: 10px;
 
 $header-height: 90px;
 
+$small-screen: 960px;
+
 @import 'Header';
 @import 'Body';
 @import 'Footer';
@@ -21,6 +23,10 @@ $header-height: 90px;
 
 .u-caps {
   text-transform: uppercase;
+}
+
+.u-center {
+  text-align: center;
 }
 
 ::selection {

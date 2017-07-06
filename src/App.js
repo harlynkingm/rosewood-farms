@@ -39,7 +39,7 @@ class App extends Component {
   render() {
     if (this.state.data.length){
       return (
-        <Router>
+        <Router onUpdate={() => window.scrollTo(0, 0)}>
           <div>
             <Loading fade={true}/>
             <Header />

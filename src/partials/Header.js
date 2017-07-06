@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../img/new_logo.png';
 
 export default class Header extends Component {
   constructor(props){
@@ -20,9 +19,9 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <NavLink to="/">
-          <img src={logo} className="header-logo" alt="Rosewood Farms"/>
-        </NavLink>
+        <h4 className="header-title">
+          <NavLink to="/"><b>Rosewood</b>Farms</NavLink>
+        </h4>
         <div id="menuIcon" onClick={this.toggleActive} className={this.state.active ? 'open' : null}>
           <span></span>
           <span></span>
@@ -32,7 +31,7 @@ export default class Header extends Component {
           <li><NavLink exact to="/" activeClassName='active'>
             Home
           </NavLink></li>
-          <li><NavLink exact to="/about" activeClassName='active'>
+          <li><NavLink to="/about" activeClassName='active'>
             About
           </NavLink></li>
           <li><NavLink to="/weddings" activeClassName='active'>

@@ -171,10 +171,10 @@
   font-size: 5em;
   line-height: 0.9; }
 
-.mainDescription h4 {
+.mainDescription h4, .mainDescription h5 {
   margin-top: 30px;
   margin-bottom: 10px; }
-.mainDescription h4:first-child {
+.mainDescription h4:first-child, .mainDescription h5:first-child {
   margin-top: 0; }
 .mainDescription ul {
   margin-bottom: 0;
@@ -202,6 +202,13 @@ p:last-child, h1:last-child {
   .container img {
     width: 100%; }
 
+#Vendors .container img {
+  height: 100px;
+  width: auto;
+  margin-top: 60px; }
+#Vendors .container h4 {
+  margin-top: 10px; }
+
 form {
   margin: 0; }
   form input, form textarea {
@@ -228,12 +235,12 @@ form {
   .construction .container {
     margin-bottom: 30vh; }
 
-.features a {
+.basicPage a {
   color: #cc3300;
   text-decoration: underline; }
-.features p:last-child {
+.basicPage p:last-child {
   margin-bottom: 10px; }
-.features h4 {
+.basicPage h4 {
   margin-bottom: 10px; }
 
 .centerPhotoBack {

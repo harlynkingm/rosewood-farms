@@ -20,12 +20,12 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <img src={logo} alt="Logo" className="header-logo"/>
-        <p className="header-title">
-          <NavLink to="/">
-            <b>Rosewood</b><br />Farms
-          </NavLink>
-        </p>
+        <NavLink to="/">
+          <img src={logo} alt="Logo" className="header-logo"/>
+          <p className="header-title">
+              <b>Rosewood</b><br />Farms
+          </p>
+        </NavLink>
         <div id="menuIcon" onClick={this.toggleActive} className={this.state.active ? 'open' : null}>
           <span></span>
           <span></span>
@@ -41,16 +41,19 @@ export default class Header extends Component {
           <li><NavLink to="/weddings" activeClassName='active'>
             Weddings
           </NavLink></li>
-          <li><NavLink to="/private-events" activeClassName='active'>
+          <li><NavLink to="/events" activeClassName='active'>
             Private Events
           </NavLink></li>
           <li><NavLink to="/gallery" activeClassName='active'>
             Gallery
           </NavLink></li>
-          <li><NavLink to="/preferred-vendors" activeClassName='active'>
+          <li><NavLink to="/vendors" activeClassName='active'>
             Preferred Vendors
           </NavLink></li>
-          <li><NavLink to="/visit-us" activeClassName='active'>
+          <li><NavLink to="/faq" activeClassName='active'>
+            Faq
+          </NavLink></li>
+          <li><NavLink to="/visit" activeClassName='active'>
             Visit Us
           </NavLink></li>
         </ul>

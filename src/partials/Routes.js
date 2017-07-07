@@ -6,7 +6,7 @@ import {
 import Home from './Home';
 import About from './About';
 import Weddings from './Weddings';
-import PrivateEvents from './PrivateEvents';
+import BasicPage from './BasicPage';
 import Gallery from './Gallery';
 import Construction from './Construction';
 
@@ -29,11 +29,17 @@ export default class Routes extends Component {
         <Route path="/weddings" component={
           () => (<Weddings data={this.getProps(this.props.data, 'Weddings')}/>)
         }/>
-        <Route path="/private-events" component={
-          () => (<PrivateEvents data={this.getProps(this.props.data, 'Private Events')}/>)
+        <Route path="/events" component={
+          () => (<BasicPage data={this.getProps(this.props.data, 'Private Events')}/>)
         }/>
         <Route path="/gallery" component={
           () => (<Gallery data={this.getProps(this.props.data, 'Gallery')}/>)
+        }/>
+        <Route path="/vendors" component={
+          () => (<BasicPage data={this.getProps(this.props.data, 'Vendors')}/>)
+        }/>
+        <Route path="/faq" component={
+          () => (<BasicPage data={this.getProps(this.props.data, 'FAQ')}/>)
         }/>
         <Route component={Construction}/>
       </Switch>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextContainer from './components/TextContainer';
 import ImageContainer from './components/ImageContainer';
+import FeaturesContainer from './components/FeaturesContainer';
 
 export default class BasicPage extends Component {
   render() {
@@ -14,6 +15,14 @@ export default class BasicPage extends Component {
           content={data ? data.pageContent : 'Loading...'}
           isTitle = {true}
         />
+        { data.textFeature1 && data.textFeature2 &&
+        <FeaturesContainer
+          feature1={data ? data.textFeature1 : 'Loading...'}
+          link1="/gallery"
+          feature2={data ? data.textFeature2 : 'Loading...'}
+          link2="/vendors"
+        />
+        }
       </div>
     )
   }

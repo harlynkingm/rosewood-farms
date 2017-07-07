@@ -12,8 +12,8 @@ export default class Footer extends Component {
               </p>
               <p>
                 <b>Address</b><br />
-                ### Street Name St.<br />
-                City, State ZipCode
+                80 Ricketts Mill Rd.<br />
+                Elkton, Maryland 21921
               </p>
             </div>
             <div className="six columns">
@@ -23,7 +23,7 @@ export default class Footer extends Component {
               </p>
               <p>
                 <b>Email</b><br />
-                email@emailplace.com
+                info@rosewoodfarms.com
               </p>
             </div>
           </div>

@@ -235,12 +235,12 @@ form {
   .construction .container {
     margin-bottom: 30vh; }
 
-.basicPage a {
+.basicPage a, .features a {
   color: #cc3300;
   text-decoration: underline; }
-.basicPage p:last-child {
+.basicPage p:last-child, .features p:last-child {
   margin-bottom: 10px; }
-.basicPage h4 {
+.basicPage h4, .features h4 {
   margin-bottom: 10px; }
 
 .centerPhotoBack {

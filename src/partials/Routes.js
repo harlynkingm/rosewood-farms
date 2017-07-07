@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
-import Weddings from './Weddings';
 import BasicPage from './BasicPage';
 import Gallery from './Gallery';
+import VisitUs from './VisitUs';
 import Construction from './Construction';
 
 export default class Routes extends Component {
@@ -27,7 +27,7 @@ export default class Routes extends Component {
           () => (<About data={this.getProps(this.props.data, 'About')}/>)
         }/>
         <Route path="/weddings" component={
-          () => (<Weddings data={this.getProps(this.props.data, 'Weddings')}/>)
+          () => (<BasicPage data={this.getProps(this.props.data, 'Weddings')}/>)
         }/>
         <Route path="/events" component={
           () => (<BasicPage data={this.getProps(this.props.data, 'Private Events')}/>)
@@ -40,6 +40,9 @@ export default class Routes extends Component {
         }/>
         <Route path="/faq" component={
           () => (<BasicPage data={this.getProps(this.props.data, 'FAQ')}/>)
+        }/>
+        <Route path="/visit" component={
+          () => (<VisitUs data={this.getProps(this.props.data, 'Visit Us')}/>)
         }/>
         <Route component={Construction}/>
       </Switch>

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import FeaturesContainer from './components/FeaturesContainer';
 import TextContainer from './components/TextContainer';
 import ImageContainer from './components/ImageContainer';
 
-export default class Weddings extends Component {
+export default class BasicPage extends Component {
   render() {
     let data = this.props.data;
     return (
-      <div className="weddings">
+      <div className="basicPage" id={data.pageTitle}>
         <ImageContainer image={data.mainPhoto.fields.file.url}/>
         <TextContainer
           pretitle={data.pretitle}
@@ -15,12 +14,15 @@ export default class Weddings extends Component {
           content={data ? data.pageContent : 'Loading...'}
           isTitle = {true}
         />
-        <FeaturesContainer
-          feature1={data ? data.textFeature1 : 'Loading...'}
-          link1="/gallery"
-          feature2={data ? data.textFeature2 : 'Loading...'}
-          link2="/vendors"
-        />
+        <div className="container">
+          <iframe
+            width="100%"
+            height="300"
+            frameBorder="0"
+            title="Map"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBxIfDIM31KjK_tA8snt_ZqDN5mNpxP2d0&q=80+Ricketts+Mill+Rd,Elkton+MD&maptype=satellite" allowFullScreen>
+          </iframe>
+        </div>
       </div>
     )
   }

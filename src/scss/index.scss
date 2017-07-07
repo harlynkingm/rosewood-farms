@@ -32,3 +32,7 @@ $small-screen: 960px;
 ::selection {
   background: #eee;
 }
+
+.disableScroll {
+  overflow: hidden;
+}

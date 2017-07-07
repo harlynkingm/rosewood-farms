@@ -19,10 +19,12 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 20px;
+  margin-left: 95px;
   margin-bottom: 0;
+  margin-top: 3px;
   letter-spacing: 0px;
-  font-weight: 100; }
+  font-weight: 400;
+  line-height: 110%; }
 
 .header-links {
   list-style-type: none;
@@ -234,6 +236,61 @@ form {
 .features h4 {
   margin-bottom: 10px; }
 
+.centerPhotoBack {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 100;
+  transition: opacity 0.5s; }
+
+.centerPhotoBack.inactive {
+  pointer-events: none; }
+
+.centerPhotoBack.active {
+  opacity: 1;
+  pointer-events: auto; }
+
+.centerPhoto {
+  position: absolute;
+  z-index: 101;
+  width: 50vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.gallery-photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -30px; }
+  .gallery-photos .gallery-image {
+    flex: 1 0 300px;
+    margin: 15px;
+    height: 260px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.59);
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.59);
+    transition: box-shadow 0.25s ease-in-out; }
+  .gallery-photos .gallery-image-child {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.25s ease-in-out;
+    cursor: pointer; }
+  .gallery-photos .gallery-image:hover .gallery-image-child {
+    transform: scale(1.08); }
+  .gallery-photos .gallery-image:hover {
+    -webkit-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.4); }
+
 @media (max-width: 960px) {
   .mainImage {
     height: 64vh;
@@ -243,7 +300,10 @@ form {
     font-size: 3.3em; }
 
   .columns div {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .centerPhoto {
+    width: 100vw; } }
 .footer {
   margin-top: 30px;
   padding-bottom: 30px;
@@ -297,5 +357,8 @@ form {
 
 ::selection {
   background: #eee; }
+
+.disableScroll {
+  overflow: hidden; }
 
 /*# sourceMappingURL=index.css.map */

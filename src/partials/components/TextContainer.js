@@ -15,9 +15,11 @@ export default class TextContainer extends Component {
           }
           <b>{this.props.title}</b>
         </h1>
+        { this.props.content &&
         <div className="mainDescription">
           <Markdown markup={ this.props.content } />
         </div>
+        }
       </div>
     )
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import {createClient} from 'contentful';
 import './css/normalize.css';
 import './css/skeleton.css';

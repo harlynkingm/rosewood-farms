@@ -21,7 +21,7 @@ export default class Contact extends Component {
     return (
       <div className="contact container container-border">
         <h1 className="u-caps rosewood"><b>Contact Us</b></h1>
-        <form action="https://formspree.io/harlynkingm@gmail.com" method="POST">
+        <form action="https://formspree.io/events@rosewoodfarms.org" method="POST">
           <input className="u-full-width" type="text" placeholder="Your Name" required name="name"/>
           <div className="row">
             <div className="six columns">

@@ -17,7 +17,9 @@ export default class Home extends Component {
           content={data ? data.pageContent : 'Loading...'}
           isTitle = {true}
         />
-        <ImageContainer image={data.secondaryPhoto.fields.file.url}/>
+        { data.secondaryPhoto &&
+          <ImageContainer image={data.secondaryPhoto.fields.file.url}/>
+        }
         <TextContainer
           title="Watch Us Grow"
           content={data ? data.pageContentSecondary : 'Loading...'}

@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #eee;
-  margin-bottom: $spacing-xl;
+  margin-top: -1 * $header-height;
 }
 
 .mainPreTitle {
@@ -58,6 +58,7 @@ p:last-child, h1:last-child {
   padding-left: $spacing-l;
   border-left: 1px solid black;
   margin-bottom: $spacing-l;
+  margin-top: $spacing-xl;
 }
 
 .container {

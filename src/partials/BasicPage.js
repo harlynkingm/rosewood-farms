@@ -8,7 +8,7 @@ export default class BasicPage extends Component {
     let data = this.props.data;
     return (
       <div className="basicPage" id={data.pageTitle}>
-        <ImageContainer image={data.mainPhoto.fields.file.url}/>
+        <ImageContainer image={data.mainPhoto}/>
         <TextContainer
           pretitle={data.pretitle}
           title={data.title}

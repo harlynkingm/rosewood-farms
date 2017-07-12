@@ -64,7 +64,7 @@ export default class Gallery extends Component {
         <div className={classes} onClick={this.toggleActive}>
           <img alt="Feature" className="centerPhoto" src={this.state.activePhoto}/>
         </div>
-        <ImageContainer image={data.mainPhoto.fields.file.url}/>
+        <ImageContainer image={data.mainPhoto}/>
         <TextContainer
           pretitle={data.pretitle}
           title={data.title}

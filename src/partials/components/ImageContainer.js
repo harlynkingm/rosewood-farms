@@ -8,11 +8,15 @@ export default class ImageContainer extends Component {
   }
 
   render() {
-    return (
-      <div
-        className="mainImage"
-        style={this.styleFromImage(this.props.image)}>
-      </div>
-    )
+    if (this.props.image){
+      return (
+        <div
+          className="mainImage"
+          style={this.styleFromImage(this.props.image.fields.file.url)}>
+        </div>
+      );
+    } else {
+      return null;
+    }
   }
 }

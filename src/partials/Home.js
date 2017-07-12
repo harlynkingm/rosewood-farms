@@ -10,16 +10,14 @@ export default class Home extends Component {
     let data = this.props.data;
     return (
       <div className="home">
-        <ImageContainer image={data.mainPhoto.fields.file.url}/>
+        <ImageContainer image={data.mainPhoto}/>
         <TextContainer
           pretitle={data.pretitle}
           title={data.title}
           content={data ? data.pageContent : 'Loading...'}
           isTitle = {true}
         />
-        { data.secondaryPhoto &&
-          <ImageContainer image={data.secondaryPhoto.fields.file.url}/>
-        }
+        <ImageContainer image={data.secondaryPhoto}/>
         <TextContainer
           title="Watch Us Grow"
           content={data ? data.pageContentSecondary : 'Loading...'}

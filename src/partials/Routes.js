@@ -4,7 +4,6 @@ import {
   Switch
 } from 'react-router-dom';
 import Home from './Home';
-import About from './About';
 import BasicPage from './BasicPage';
 import Gallery from './Gallery';
 import VisitUs from './VisitUs';
@@ -24,7 +23,7 @@ export default class Routes extends Component {
           () => (<Home data={this.getProps(this.props.data, 'Home')}/>)
         }/>
         <Route path="/about" component={
-          () => (<About data={this.getProps(this.props.data, 'About')}/>)
+          () => (<BasicPage data={this.getProps(this.props.data, 'About')}/>)
         }/>
         <Route path="/weddings" component={
           () => (<BasicPage data={this.getProps(this.props.data, 'Weddings')}/>)

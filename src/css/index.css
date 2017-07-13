@@ -153,9 +153,6 @@
     left: 2px; } }
 .mainImage {
   height: 78vh;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #eee;
   margin-top: -90px; }
 
@@ -196,6 +193,16 @@ p:last-child, h1:last-child {
   border-left: 1px solid black;
   margin-bottom: 30px;
   margin-top: 60px; }
+
+.animatewrapper {
+  transform: translateX(60px);
+  transition: transform 1s, opacity 1s;
+  transition-delay: 0.3s;
+  opacity: 0; }
+
+.animatewrapper.active {
+  transform: translateX(0);
+  opacity: 1; }
 
 .container {
   margin-bottom: 60px; }

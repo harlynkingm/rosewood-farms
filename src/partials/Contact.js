@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnimateWrapper from './components/AnimateWrapper';
 
 export default class Contact extends Component {
   constructor(props){
@@ -20,6 +21,7 @@ export default class Contact extends Component {
     if (!this.state.active){
     return (
       <div className="contact container container-border">
+        <AnimateWrapper>
         <h1 className="u-caps rosewood"><b>Contact Us</b></h1>
         <form action="https://formspree.io/events@rosewoodfarms.org" method="POST">
           <input className="u-full-width" type="text" placeholder="Your Name" required name="name"/>
@@ -35,6 +37,7 @@ export default class Contact extends Component {
           <textarea className="u-full-width" type="text" placeholder="Comments" required name="comments"/>
           <button type="submit">Send Mail</button>
         </form>
+        </AnimateWrapper>
       </div>
     )
   } else {

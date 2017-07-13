@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Parallax } from 'react-parallax';
 
 export default class ImageContainer extends Component {
   styleFromImage(image){
@@ -10,10 +11,7 @@ export default class ImageContainer extends Component {
   render() {
     if (this.props.image){
       return (
-        <div
-          className="mainImage"
-          style={this.styleFromImage(this.props.image.fields.file.url)}>
-        </div>
+        <Parallax bgImage={this.props.image.fields.file.url} className="mainImage" bgHeight="100vh"/>
       );
     } else {
       return null;

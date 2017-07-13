@@ -1,8 +1,8 @@
 .mainImage {
   height: 78vh;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-position: top;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   background-color: #eee;
   margin-top: -1 * $header-height;
 }
@@ -59,6 +59,18 @@ p:last-child, h1:last-child {
   border-left: 1px solid black;
   margin-bottom: $spacing-l;
   margin-top: $spacing-xl;
+}
+
+.animatewrapper {
+  transform: translateX($spacing-l * 2);
+  transition: transform 1s, opacity 1s;
+  transition-delay: 0.3s;
+  opacity: 0;
+}
+
+.animatewrapper.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .container {

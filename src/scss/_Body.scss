@@ -1,3 +1,7 @@
+.backgroundTexture {
+  background-image: url('../img/cream-dust.png');
+}
+
 .mainImage {
   height: 78vh;
   // background-position: top;
@@ -101,6 +105,7 @@ form {
     opacity: 0.8;
     transition: border 0.2s, opacity 0.2s;
     padding: 5px;
+    background: none;
   }
 
   input:focus, textarea:focus {

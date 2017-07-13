@@ -151,6 +151,9 @@
     transform: rotate(-45deg);
     top: 24px;
     left: 2px; } }
+.backgroundTexture {
+  background-image: url("../img/cream-dust.png"); }
+
 .mainImage {
   height: 78vh;
   background-color: #eee;
@@ -223,7 +226,8 @@ form {
     border-bottom: 1px solid black;
     opacity: 0.8;
     transition: border 0.2s, opacity 0.2s;
-    padding: 5px; }
+    padding: 5px;
+    background: none; }
   form input:focus, form textarea:focus {
     outline: none;
     opacity: 1;
@@ -326,7 +330,8 @@ form {
   padding-bottom: 30px;
   padding-top: 60px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  background-image: url("../img/cream-dust.png"); }
   .footer p {
     font-size: 100%; }
 

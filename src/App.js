@@ -40,7 +40,7 @@ class App extends Component {
     if (this.state.data.length){
       return (
         <Router onUpdate={() => window.scrollTo(0, 0)}>
-          <div>
+          <div className="backgroundTexture">
             <Loading fade={true}/>
             <Header />
             <Routes data={this.state.data}/>
